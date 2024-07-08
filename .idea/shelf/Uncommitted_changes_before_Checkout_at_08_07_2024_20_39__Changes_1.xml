@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1" date="1720463984364" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 08/07/2024 20:39 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/ChromeRegistry.class" />
+    <option name="AFTER_PATH" value="target/classes/ChromeRegistry.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/ChromeRegistry.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/chromedriwer-win64/chromedriver.exe" />
+    <option name="AFTER_PATH" value="target/classes/chromedriwer-win64/chromedriver.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/chromedriver.exe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/LoginPage.class" />
+    <option name="AFTER_PATH" value="target/classes/LoginPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/LoginPage.class" />
+  </binary>
+</changelist>
