@@ -4,10 +4,32 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
 
+    @FindBy(xpath = "//*[@name=\"email\"]")
+    private WebElement emailEditBox;
+    @FindBy(xpath = "//*[@name=\"password\"]")
+    private WebElement passwordEditBox;
+    @FindBy(xpath = "//button[@type=\"submit\"]")
+    private WebElement loginButton;
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+    public LoginPage open() {
+        driver.get("http://chatty.telran-edu.de:8089/login");
+        return this;
+    }
+    public LoginPage enterEmail(String email) {
+        emailEditBox.sendKeys(email);
+        return this;
+    }
+    public LoginPage enterPassword(String password) {
+        passwordEditBox.sendKeys(password);
+        return this;
+    }
+    public HomePage clickButton(){
+        loginButton.click();
+        return new HomePage(driver);
+    }
 
-    @FindBy (xpath = "//*[@name=\"email\"]")
-    private WebElement emailEditBox;
+
 }
