@@ -1,0 +1,124 @@
+Index: src/test/java/Test.java
+===================================================================
+diff --git a/src/test/java/Test.java b/src/test/java/Test.java
+deleted file mode 100644
+--- a/src/test/java/Test.java	(revision 159504f9449d400591384b6a6d8f174fee526b9b)
++++ /dev/null	(revision 159504f9449d400591384b6a6d8f174fee526b9b)
+@@ -1,2 +0,0 @@
+-public class Test {
+-}
+Index: src/main/java/HomePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/HomePage.java b/src/main/java/HomePage.java
+new file mode 100644
+--- /dev/null	(date 1720436122298)
++++ b/src/main/java/HomePage.java	(date 1720436122298)
+@@ -0,0 +1,39 @@
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.FindBy;
++
++public class HomePage extends BasePage {
++
++
++    public HomePage(WebDriver driver) {
++        super(driver);
++    }
++
++    @FindBy(xpath = "//img[@alt=\"Post\"]")
++    private WebElement postImage;
++
++    @FindBy(css =".post-content__top h3")
++    private WebElement postTitle;
++
++    @FindBy(css = ".post__description")
++    private WebElement postDescription;
++
++
++
++    public boolean postImageIsDisplayed() {
++        return postImage.isDisplayed();
++    }
++
++    public boolean postTitleIsDisplayed() {
++        return postTitle.isDisplayed();
++    }
++    public boolean postDescriptionIsDisplayed() {
++        return postDescription.isDisplayed();
++    }
++
++
++
++}
++
++
++
+Index: src/main/java/LoginPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\n\r\npublic class LoginPage extends BasePage{\r\n\r\n    public LoginPage(WebDriver driver) {\r\n        super(driver);\r\n    }\r\n\r\n    @FindBy (xpath = \"//*[@name=\\\"email\\\"]\")\r\n    private WebElement emailEditBox;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/LoginPage.java b/src/main/java/LoginPage.java
+--- a/src/main/java/LoginPage.java	(revision 159504f9449d400591384b6a6d8f174fee526b9b)
++++ b/src/main/java/LoginPage.java	(date 1720158385836)
+@@ -11,3 +11,4 @@
+     @FindBy (xpath = "//*[@name=\"email\"]")
+     private WebElement emailEditBox;
+ }
++
+Index: src/main/java/DraftPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/DraftPage.java b/src/main/java/DraftPage.java
+new file mode 100644
+--- /dev/null	(date 1720436205930)
++++ b/src/main/java/DraftPage.java	(date 1720436205930)
+@@ -0,0 +1,2 @@
++public class DraftPage {
++}
+Index: src/test/java/HomePageTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/HomePageTest.java b/src/test/java/HomePageTest.java
+new file mode 100644
+--- /dev/null	(date 1720436205947)
++++ b/src/test/java/HomePageTest.java	(date 1720436205947)
+@@ -0,0 +1,17 @@
++public class HomePageTest {
++    @Test
++    public void checkItemPhotos(){
++        LoginPage loginPage = new LoginPage(driver);
++        loginPage.enterValueToUsernameInputField("standard_user");
++        loginPage.enterValueToPasswordInputField("secret_sauce");
++        loginPage.clickOnLoginButton();
++        InventoryPage inventoryPage = new InventoryPage(driver);
++        assertTrue(inventoryPage.inventoryListIsDisplayed());
++        //Check that there are 6 photos
++        assertEquals(6, inventoryPage.getItemImagesQuantity());
++        //Check that all photos are displayed
++        assertTrue(inventoryPage.allItemImagesAreDisplayed());
++
++
++
++    }
+Index: src/main/java/AboutChattyPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/AboutChattyPage.java b/src/main/java/AboutChattyPage.java
+new file mode 100644
+--- /dev/null	(date 1720436062394)
++++ b/src/main/java/AboutChattyPage.java	(date 1720436062394)
+@@ -0,0 +1,2 @@
++public class AboutChattyPage {
++}
