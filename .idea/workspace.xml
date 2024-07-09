@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="">
+    <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="Add BasePage">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContactUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DraftPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DraftPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriwer-win64/LICENSE.chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriwer-win64/LICENSE.chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriwer-win64/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriwer-win64/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestLoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +72,28 @@
       <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoginPage">
+  <component name="RunManager" selected="JUnit.TestLoginPage">
     <configuration name="LoginPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LoginPage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.checkPostElementIsDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
+      <option name="METHOD_NAME" value="checkPostElementIsDisplayed" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,10 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginPage" />
         <item itemvalue="JUnit.TestLoginPage" />
+        <item itemvalue="JUnit.TestHomePage" />
         <item itemvalue="JUnit.TestLoginPage.testLoginWithValidData (1)" />
         <item itemvalue="Application.LoginPage" />
+        <item itemvalue="JUnit.TestHomePage.checkPostElementIsDisplayed" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1720437122127</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add BasePage">
+      <created>1720464090260</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720464090260</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add BasePage">
+      <created>1720464251403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720464251403</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +223,7 @@
     <MESSAGE value="POM model + Junit" />
     <MESSAGE value="POM model + Junit new" />
     <MESSAGE value="New page" />
-    <option name="LAST_COMMIT_MESSAGE" value="New page" />
+    <MESSAGE value="Add BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BasePage" />
   </component>
 </project>
