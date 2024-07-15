@@ -1,9 +1,13 @@
+import baseTest.BaseTest;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import drivers.ChromeRegistry;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestLoginPage {
+public class TestLoginPage extends BaseTest {
     @Test
     public void testLoginWithValidData() {
         ChromeDriver driver = new ChromeRegistry().registerDriver();

@@ -1,3 +1,5 @@
+package drivers;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ChromeRegistry {
@@ -9,5 +11,7 @@ public class ChromeRegistry {
         System.setProperty("webdriver.chrome.driver", PATH);
         return  new ChromeDriver();
     }
+
+
 }
 
