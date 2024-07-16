@@ -3,10 +3,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestHomePage {
+public class TestHomePage extends BaseTest{
     @Test
     public void checkPostElementIsDisplayed() {
-        ChromeDriver driver = new ChromeRegistry().registerDriver();
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.open()
                 .enterEmail("olgale4@gmail.com")
@@ -21,8 +20,13 @@ public class TestHomePage {
                 assertTrue(homePage.isPostTitleDisplayed());
                 assertTrue(homePage.isPostDescriptionDisplayed());
 
+                assertTrue(homePage.isMyDraftsButtonDisplayed());
+                assertTrue(homePage.isCreateAPostDisplayed());
+                assertTrue(homePage.isNewsFeedButtonDisplayed());
 
-        driver.quit();
+                assertTrue(homePage.isUserPostsByNameDisplayed());
+                assertTrue(homePage.isElementSuggestionDisplayed());
+                assertTrue(homePage.isPlusButtonDisplayed());
     }
 }
 

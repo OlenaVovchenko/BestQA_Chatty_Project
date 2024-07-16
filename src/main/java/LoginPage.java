@@ -1,6 +1,10 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
@@ -10,6 +14,7 @@ public class LoginPage extends BasePage{
     private WebElement passwordEditBox;
     @FindBy(xpath = "//button[@type=\"submit\"]")
     private WebElement loginButton;
+
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -31,6 +36,4 @@ public class LoginPage extends BasePage{
         loginButton.click();
         return new HomePage(driver);
     }
-
-
 }

@@ -3,10 +3,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TestLoginPage {
+public class TestLoginPage extends BaseTest{
     @Test
     public void testLoginWithValidData() {
-        ChromeDriver driver = new ChromeRegistry().registerDriver();
+
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.open()
                 .enterEmail("olgale4@gmail.com")
@@ -14,7 +14,5 @@ public class TestLoginPage {
                 .clickButton();
 
         assertTrue(homePage.isPostSectionDisplayed());
-
-        driver.quit();
     }
 }

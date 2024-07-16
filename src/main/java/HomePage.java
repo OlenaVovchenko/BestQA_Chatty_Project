@@ -23,6 +23,25 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@class='post__description']")
     private WebElement postDescription;
 
+   @FindBy(xpath = "//a[@class='menu-item ' and @href='/draft']")
+    private WebElement myDraftsButton;
+
+    @FindBy(xpath = "//a[@class='menu-item active' and @href='/homeblog']")
+    private WebElement newsFeedButton;
+
+    @FindBy(xpath = "//*[@class='post-header__plus-box']")
+    private WebElement CreateAPost;
+
+    @FindBy(xpath ="//*[contains(text(),'batrakalena86')]")
+    private WebElement displayingUserPostsByName;
+
+    @FindBy(xpath = "//h2[text()='Suggestions']")
+    private WebElement Suggestions;
+
+    @FindBy(xpath = "//*[@data-test='post-header__plus']" )
+    private WebElement plusButton;
+
+
     public HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -70,6 +89,64 @@ public class HomePage extends BasePage {
             wait.until(ExpectedConditions.visibilityOf(postDescription));
             return postDescription.isDisplayed();
         } catch (Exception e) {
+            return false;
+        }
+    }
+    public boolean isMyDraftsButtonDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(myDraftsButton));
+            return myDraftsButton.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isNewsFeedButtonDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(newsFeedButton));
+            return newsFeedButton.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isCreateAPostDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(CreateAPost));
+            return CreateAPost.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isUserPostsByNameDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(displayingUserPostsByName));
+            return displayingUserPostsByName.isDisplayed();
+        } catch (Exception exception) {
+            return false;
+        }
+    }
+
+   public boolean isElementSuggestionDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(Suggestions));
+            return Suggestions.isDisplayed();
+        } catch (Exception exception) {
+            return false;
+        }
+    }
+    public boolean isPlusButtonDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(plusButton));
+            return plusButton.isDisplayed();
+        } catch (Exception exception) {
             return false;
         }
     }
