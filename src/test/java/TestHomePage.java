@@ -24,5 +24,20 @@ public class TestHomePage {
 
         driver.quit();
     }
+    @Test
+    public void checkPostPreviewIsDisplayed() {
+        ChromeDriver driver = new ChromeRegistry().registerDriver();
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = loginPage.open()
+                .enterEmail("olgale4@gmail.com")
+                .enterPassword("Oobubagabriel4465#")
+                .clickButton();
+
+
+
+
+
+        //driver.quit();
+    }
 }
 
