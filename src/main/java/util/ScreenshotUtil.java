@@ -18,17 +18,15 @@ public class ScreenshotUtil {
     private ScreenshotUtil() {
     }
 
-            public static void captureScreen(WebDriver driver, String name) {
+    public static void captureScreen(WebDriver driver, String name) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         try {
             FileHandler.copy(ts.getScreenshotAs(OutputType.FILE),
                     new File(PATH + name + System.currentTimeMillis() + ".png"));
         } catch (FileNotFoundException e) {
-           System.out.println("File wasn't found - file NotFoundexception");
+            System.out.println("File wasn't found - file NotFoundexception");
         } catch (IOException ex) {
             System.out.println("Input/output exception");
         }
     }
-
-
 }

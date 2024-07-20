@@ -13,18 +13,22 @@ public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+
     public LoginPage open() {
         driver.get("http://chatty.telran-edu.de:8089/login");
         return this;
     }
+
     public LoginPage enterEmail(String email) {
         emailEditBox.sendKeys(email);
         return this;
     }
+
     public LoginPage enterPassword(String password) {
         passwordEditBox.sendKeys(password);
         return this;
     }
+
     public HomePage clickButton() {
         loginButton.click();
         return new HomePage(driver);
