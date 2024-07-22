@@ -23,6 +23,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@class='post__description']")
     private WebElement postDescription;
 
+    @FindBy(xpath = "//div[@class='header__user header__menu']")
+    private WebElement helloUsernameInHeader;
+
     public HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -72,5 +75,10 @@ public class HomePage extends BasePage {
         } catch (Exception e) {
             return false;
         }
+    }
+    public boolean isTextHelloUserPresent(String text) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(helloUsernameInHeader));
+        return helloUsernameInHeader.getText().contains(text);
     }
 }
