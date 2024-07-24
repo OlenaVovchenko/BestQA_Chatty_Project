@@ -9,12 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class RegistrationPage extends BasePage {
-    private WebDriverWait wait;
-
-    public RegistrationPage(WebDriver driver) {
-        super(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-    }
 
     @FindBy(xpath = "//input[@placeholder='Email']")
     private WebElement inputEmail;
@@ -32,6 +26,12 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//div[@class='text-error']")
     private WebElement errorMessage;
 
+    private WebDriverWait wait;
+
+    public RegistrationPage(WebDriver driver) {
+        super(driver);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    }
 
     public RegistrationPage enterEmail(String email) {
         inputEmail.sendKeys(email);

@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class PostPage extends BasePage {
-    private WebDriverWait wait;
 
     @FindBy(xpath = "//*[@data-test='post']")
     private WebElement personalPost;
@@ -23,6 +22,7 @@ public class PostPage extends BasePage {
 
     @FindBy(xpath = "//*[@class='post__description']")
     private WebElement postDescription;
+    private WebDriverWait wait;
 
     public PostPage(WebDriver driver) {
         super(driver);

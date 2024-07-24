@@ -12,7 +12,6 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
-    private WebDriverWait wait;
 
     @FindBy(xpath = "//*[@class='posts__section']")
     private WebElement postSection;
@@ -56,14 +55,13 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@href='/contact']")
     private WebElement contactLink;
 
+    private WebDriverWait wait;
 
     public HomePage(WebDriver driver) {
         super(driver);
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-
     }
-
 
     public boolean isPostSectionDisplayed() {
             wait.until(ExpectedConditions.visibilityOf(postSection));
@@ -135,7 +133,6 @@ public class HomePage extends BasePage {
         return this;
 
     }
-
 
     public HomePage enterPostTitle(String title) {
          wait.until(ExpectedConditions.visibilityOf(postTitleField)).sendKeys(title);

@@ -8,11 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class PersonalInformationPasswordPage extends BasePage {
 
 
-    public PersonalInformationPasswordPage(WebDriver driver) {
-        super(driver);
-
-    }
-
     @FindBy(xpath = "//*[@class='PasswordModal_password_modal__O8ESn']")
     private WebElement passwordBox;
 
@@ -33,7 +28,10 @@ public class PersonalInformationPasswordPage extends BasePage {
     @FindBy(xpath = "//*[@class='PasswordModal_error__9a5OG']")
     private WebElement errorMessage;
 
+    public PersonalInformationPasswordPage(WebDriver driver) {
+        super(driver);
 
+    }
     public boolean isPasswordBoxDisplayed() {
         return passwordBox.isDisplayed();
     }

@@ -11,12 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class PersonalInformationPage extends BasePage {
-    private WebDriverWait wait;
-
-    public PersonalInformationPage(WebDriver driver) {
-        super(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-    }
 
     @FindBy(xpath = "//*[@class='post-header__plus-box']")
     private WebElement plusBox;
@@ -54,6 +48,12 @@ public class PersonalInformationPage extends BasePage {
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement saveButton;
 
+    private WebDriverWait wait;
+
+    public PersonalInformationPage(WebDriver driver) {
+        super(driver);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    }
 
     public boolean isPostHeaderIsDisplayed() {
         return plusBox.isDisplayed();
