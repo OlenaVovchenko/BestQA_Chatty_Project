@@ -21,7 +21,7 @@ public class TestRegistrationPage extends BaseTest {
 
     public void registrationNewUserWithValidData() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.open()
+                 loginPage.open()
                 .clickSignUp();
 
         RegistrationPage registrationPage = new RegistrationPage(driver);
@@ -39,7 +39,7 @@ public class TestRegistrationPage extends BaseTest {
     @Test
     public void registrationNewUserWithInvalidData() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.open()
+                 loginPage.open()
                 .clickSignUp();
 
         RegistrationPage registrationPage = new RegistrationPage(driver);

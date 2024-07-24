@@ -32,3 +32,5 @@ build/
 ### Mac OS ###
 .DS_Store
 /target/
+/target/
+/.idea/

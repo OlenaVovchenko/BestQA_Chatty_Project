@@ -62,7 +62,6 @@ public class TestHeaderPage extends BaseTest {
 
     @Test
     public void checkHeaderDropdownMenu() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.hoverDropdownMenu();
         headerPage.clickOnMyDraftsDropdown();

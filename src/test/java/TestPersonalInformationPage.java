@@ -42,8 +42,6 @@ public class TestPersonalInformationPage extends BaseTest {
         headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
         PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
         assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        driver.manage().window().maximize();
         personalInformationPage.clickOnPlusBox()
                 .enterName(userName)
                 .enterSurname(userSurname)
@@ -57,12 +55,10 @@ public class TestPersonalInformationPage extends BaseTest {
     public void fillingInChangePasswordField() {
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isPostSectionDisplayed());
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
         PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
         assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
-        driver.manage().window().maximize();
         personalInformationPage.clickChangePasswordButton();
         PersonalInformationPasswordPage passwordPage = new PersonalInformationPasswordPage(driver);
         assertTrue(passwordPage.isPasswordBoxDisplayed());
@@ -78,12 +74,10 @@ public class TestPersonalInformationPage extends BaseTest {
     public void fillingInChangePasswordFieldWithPasswordsNotMatching() {
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isPostSectionDisplayed());
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
         PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
         assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
-        driver.manage().window().maximize();
         personalInformationPage.clickChangePasswordButton();
         PersonalInformationPasswordPage passwordPage = new PersonalInformationPasswordPage(driver);
         assertTrue(passwordPage.isPasswordBoxDisplayed());
