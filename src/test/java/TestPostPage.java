@@ -9,21 +9,21 @@ import drivers.ChromeRegistry;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestPostPage extends BaseTest {
+    private final String userEmail = "olgale4@gmail.com";
+    private final String userPassword = "Oobubagabriel4465#";
+
     @Test
     public void checkPostIsDisplayed() {
-         ChromeDriver driver = new ChromeRegistry().registerDriver();
-         LoginPage loginPage = new LoginPage(driver);
-         HomePage homePage = loginPage.open()
-                .enterEmail("olgale4@gmail.com")
-                .enterPassword("Oobubagabriel4465#")
+        LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = loginPage.open()
+                .enterEmail(userEmail)
+                .enterPassword(userPassword)
                 .clickButton();
 
         assertTrue(homePage.isPostSectionDisplayed());
-
         homePage.clickPostsToggle();
-        PostPage postPage= new PostPage(driver);
+        PostPage postPage = new PostPage(driver);
         homePage.clickPost();
-
         assertTrue(postPage.isPostTitleDisplayed());
         assertTrue(postPage.isPostDescriptionDisplayed());
         assertTrue(postPage.isPostPhotoDisplayed());

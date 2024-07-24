@@ -13,44 +13,42 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestRegistrationPage extends BaseTest {
 
+    private final String userEmail = "945@web.de";
+    private final String userPassword = "Oobubagabriel4465#";
+    private final String userConfirmPassword = "Oobubagabriel4465#";
+
     @Test
 
     public void registrationNewUserWithValidData() {
-        ChromeDriver driver = new ChromeRegistry().registerDriver();
-        LoginPage loginPage = new LoginPage(driver);
-                loginPage.open()
-                .clickSignUp();
-
-        RegistrationPage registrationPage= new RegistrationPage(driver);
-        registrationPage.enterEmail("223@web.de")
-                        .enterPassword("Oobubagabriel4465#")
-                        .enterConfirmPassword("Oobubagabriel4465#")
-                        .clickRegistrationButton();
-        HomePage homePage= new HomePage(driver);
-
-        assertTrue(homePage.isPostSectionDisplayed());
-
-        driver.quit();
-
-
-    }
-     @Test
-    public void registrationNewUserWithInvalidData() {
-        ChromeDriver driver = new ChromeRegistry().registerDriver();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open()
                 .clickSignUp();
 
-        RegistrationPage registrationPage= new RegistrationPage(driver);
-        registrationPage.enterEmail("olgaya@web.de")
-                .enterPassword("Oobubagabriel4465#")
-                .enterConfirmPassword("Oobubagabriel4465#")
+        RegistrationPage registrationPage = new RegistrationPage(driver);
+        registrationPage.enterEmail(userEmail)
+                .enterPassword(userPassword)
+                .enterConfirmPassword(userConfirmPassword)
+                .clickRegistrationButton();
+        HomePage homePage = new HomePage(driver);
+
+        assertTrue(homePage.isPostSectionDisplayed());
+
+
+    }
+
+    @Test
+    public void registrationNewUserWithInvalidData() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.open()
+                .clickSignUp();
+
+        RegistrationPage registrationPage = new RegistrationPage(driver);
+        registrationPage.enterEmail(userEmail)
+                .enterPassword(userPassword)
+                .enterConfirmPassword(userConfirmPassword)
                 .clickRegistrationButton();
 
         assertTrue(registrationPage.isErrorMessageDisplayed("Email already exists!"));
-
-        driver.quit();
-
 
     }
 }

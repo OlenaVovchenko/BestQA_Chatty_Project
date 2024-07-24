@@ -1,4 +1,6 @@
 import baseTest.BaseTest;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.*;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,71 +12,88 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestPersonalInformationPage extends BaseTest {
 
-    @Test
-    public void fillingInPersonalInformationForm() {
-        ChromeDriver driver = new ChromeDriver();
+    private final String userEmail = "olgale4@gmail.com";
+    private final String userPassword = "Oobubagabriel4465#";
+    private final String userName = "olga";
+    private final String userSurname = "zeltser";
+    private final String userGender = "female";
+    private final String userPhone = "1234567";
+    private final String oldPassword = "OldPassword123";
+    private final String newPassword = "NewPassword4465#";
+    private final String confirmPassword = "NewPassword4465";
+    private final String birthDate = "01";
+    private final String birthMonth = "June";
+    private final String birthYear = "1981";
+
+    @BeforeEach
+    public void setUp() {
+        super.setUp();
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.open()
-                .enterEmail("olgale4@gmail.com")
-                .enterPassword("Oobubagabriel4465#")
+                .enterEmail(userEmail)
+                .enterPassword(userPassword)
                 .clickButton();
-
         assertTrue(homePage.isPostSectionDisplayed());
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    }
 
+    @Test
+    public void fillingInPersonalInformationForm() {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
-
         PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
         assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.manage().window().maximize();
-
         personalInformationPage.clickOnPlusBox()
-                .enterName("Olga")
-                .enterSurname("Zeltser")
-                .selectGender("female")
-                .fillInBirthdate("1", "June", "1981")
-                .enterPhone("1234567")
+                .enterName(userName)
+                .enterSurname(userSurname)
+                .selectGender(userGender)
+                .fillInBirthdate(birthDate, birthMonth, birthYear)
+                .enterPhone(userPhone)
                 .clickSaveButton();
-
-        personalInformationPage.clickSaveButton();
-
-        driver.quit();
-
     }
 
     @Test
     public void fillingInChangePasswordField() {
-        ChromeDriver driver = new ChromeDriver();
-        LoginPage loginPage = new LoginPage(driver);
-        HomePage homePage = loginPage.open()
-                .enterEmail("olgale4@gmail.com")
-                .enterPassword("Oobubagabriel4465#")
-                .clickButton();
-
+        HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isPostSectionDisplayed());
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         HeaderPage headerPage = new HeaderPage(driver);
-
         headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
         PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
-
         assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
         driver.manage().window().maximize();
         personalInformationPage.clickChangePasswordButton();
-
         PersonalInformationPasswordPage passwordPage = new PersonalInformationPasswordPage(driver);
         assertTrue(passwordPage.isPasswordBoxDisplayed());
 
-        passwordPage.inputOldPassword("OldPassword123")
-                .inputNewPassword("NewPassword4465#")
-                .confirmNewPassword("NewPassword4465#")
+        passwordPage.inputOldPassword(oldPassword)
+                .inputNewPassword(newPassword)
+                .confirmNewPassword(confirmPassword)
                 .clickSaveButton();
 
+    }
 
-        driver.quit();
+    @Test
+    public void fillingInChangePasswordFieldWithPasswordsNotMatching() {
+        HomePage homePage = new HomePage(driver);
+        assertTrue(homePage.isPostSectionDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        HeaderPage headerPage = new HeaderPage(driver);
+        headerPage.hoverDropdownMenu().clickOnYourProfileDropdown();
+        PersonalInformationPage personalInformationPage = new PersonalInformationPage(driver);
+        assertTrue(personalInformationPage.isPostHeaderIsDisplayed());
+        driver.manage().window().maximize();
+        personalInformationPage.clickChangePasswordButton();
+        PersonalInformationPasswordPage passwordPage = new PersonalInformationPasswordPage(driver);
+        assertTrue(passwordPage.isPasswordBoxDisplayed());
 
+        passwordPage.inputOldPassword(oldPassword)
+                .inputNewPassword(newPassword)
+                .confirmNewPassword(confirmPassword)
+                .clickSaveButton();
+
+        passwordPage.isErrorMessageDisplayed("The new passwords do not match.");
     }
 }
 

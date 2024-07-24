@@ -9,8 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class RegistrationPage extends BasePage {
+    private WebDriverWait wait;
+
     public RegistrationPage(WebDriver driver) {
         super(driver);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     @FindBy(xpath = "//input[@placeholder='Email']")
@@ -53,12 +56,11 @@ public class RegistrationPage extends BasePage {
     }
 
     public boolean isErrorMessageDisplayed(String text) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-         wait.until(ExpectedConditions.visibilityOf(errorMessage));
-         return errorMessage.getText().contains(text);
+        wait.until(ExpectedConditions.visibilityOf(errorMessage));
+        return errorMessage.getText().contains(text);
 
-        }
     }
+}
 
 
 

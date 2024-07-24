@@ -6,9 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class PostPage extends BasePage {
+    private WebDriverWait wait;
 
     @FindBy(xpath = "//*[@data-test='post']")
     private WebElement personalPost;
@@ -24,23 +26,20 @@ public class PostPage extends BasePage {
 
     public PostPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public boolean isPostTitleDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(postTitle));
         return postTitle.isDisplayed();
     }
 
     public boolean isPostDescriptionDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(postDescription));
         return postDescription.isDisplayed();
     }
 
     public boolean isPostPhotoDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(postPhoto));
         return postPhoto.isDisplayed();
     }

@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="Add LatestVersion">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_18_16_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_18_16__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/ChromeRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_07_2024_20_39__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/ChromeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/ChromeRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AboutChattyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AboutChattyPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HeaderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PostPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHeaderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPersonalInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPersonalInformationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPostPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/generalTestSuite/GeneralTestSuite.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +63,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -72,33 +100,31 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestHeaderPage.checkHeaderAtContactLink">
-    <configuration name="TestHeaderPage.checkHeaderAtContactLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestQA_Chatty_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHeaderPage" />
-      <option name="METHOD_NAME" value="checkHeaderAtContactLink" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPersonalInformationPage.fillingInChangePasswordField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestRegistrationPage.registrationNewUserWithInvalidData">
+    <configuration name="TestPersonalInformationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPersonalInformationPage" />
-      <option name="METHOD_NAME" value="fillingInChangePasswordField" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonalInformationPage.fillingInChangePasswordFieldWithPasswordsNotMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPersonalInformationPage" />
+      <option name="METHOD_NAME" value="fillingInChangePasswordFieldWithPasswordsNotMatching" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPostPage.checkPostIsDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPostPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPostPage" />
-      <option name="METHOD_NAME" value="checkPostIsDisplayed" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestHeaderPage.checkHeaderAtContactLink" />
         <item itemvalue="JUnit.TestRegistrationPage.registrationNewUserWithInvalidData" />
         <item itemvalue="JUnit.TestRegistrationPage.registrationNewUserWithValidData" />
-        <item itemvalue="JUnit.TestPostPage.checkPostIsDisplayed" />
-        <item itemvalue="JUnit.TestPersonalInformationPage.fillingInChangePasswordField" />
+        <item itemvalue="JUnit.TestPostPage" />
+        <item itemvalue="JUnit.TestPersonalInformationPage.fillingInChangePasswordFieldWithPasswordsNotMatching" />
+        <item itemvalue="JUnit.TestPersonalInformationPage" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721045914738</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add LatestVersion">
+      <created>1721075287862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721075287862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

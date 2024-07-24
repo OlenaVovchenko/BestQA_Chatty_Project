@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class TestLoginPage extends BaseTest {
     @Test
     public void testLoginWithValidData() {
-        ChromeDriver driver = new ChromeRegistry().registerDriver();
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.open()
                 .enterEmail("olgale4@gmail.com")
@@ -19,6 +18,6 @@ public class TestLoginPage extends BaseTest {
 
         assertTrue(homePage.isPostSectionDisplayed());
 
-        driver.quit();
+
     }
 }

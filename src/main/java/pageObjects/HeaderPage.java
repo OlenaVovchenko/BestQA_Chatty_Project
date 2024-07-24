@@ -4,12 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HeaderPage extends BasePage {
+    private WebDriverWait wait;
 
     public HeaderPage(WebDriver driver) {
         super(driver);
-    }
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+          }
 
     @FindBy(xpath = "//*[@class='header-box']")
     private WebElement headerBox;
@@ -67,18 +74,21 @@ public class HeaderPage extends BasePage {
     }
 
     public boolean isHeaderBoxIsDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(headerBox));
         return headerBox.isDisplayed();
     }
 
     public boolean isHeaderNavigationPanelIsDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(navigationPanel));
         return navigationPanel.isDisplayed();
     }
 
     public boolean isHeaderUserIsDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(headerUser));
         return headerUser.isDisplayed();
     }
 
-       public HeaderPage hoverDropdownMenu() {
+    public HeaderPage hoverDropdownMenu() {
         new Actions(driver).moveToElement(headerUser).perform();
         return this;
     }

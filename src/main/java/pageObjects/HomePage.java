@@ -12,6 +12,8 @@ import java.util.List;
 
 public class HomePage extends BasePage {
 
+    private WebDriverWait wait;
+
     @FindBy(xpath = "//*[@class='posts__section']")
     private WebElement postSection;
 
@@ -57,41 +59,38 @@ public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+
     }
 
 
     public boolean isPostSectionDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             wait.until(ExpectedConditions.visibilityOf(postSection));
             return postSection.isDisplayed();
 
     }
 
     public HomePage clickPostsToggle() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(myPostsToggle)).click();
+         wait.until(ExpectedConditions.elementToBeClickable(myPostsToggle)).click();
         return this;
     }
 
     public boolean isPostPhotoDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(postPhoto));
+         wait.until(ExpectedConditions.visibilityOf(postPhoto));
          return postPhoto.isDisplayed();
 
         }
 
 
     public boolean isPostTitleDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
            wait.until(ExpectedConditions.visibilityOf(postTitle));
             return postTitle.isDisplayed();
 
     }
 
     public boolean isPostDescriptionDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(postDescription));
+          wait.until(ExpectedConditions.visibilityOf(postDescription));
           return postDescription.isDisplayed();
 
     }
@@ -109,14 +108,12 @@ public class HomePage extends BasePage {
 
 
     public int getPostsQuantity() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-         wait.until(ExpectedConditions.visibilityOfAllElements(personalPosts));
+          wait.until(ExpectedConditions.visibilityOfAllElements(personalPosts));
          return personalPosts.size();
 
     }
 
     public PostPage clickPost() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfAllElements(postTitle));
         postTitle.click();
         return new PostPage(driver);
@@ -141,19 +138,16 @@ public class HomePage extends BasePage {
 
 
     public HomePage enterPostTitle(String title) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(postTitleField)).sendKeys(title);
+         wait.until(ExpectedConditions.visibilityOf(postTitleField)).sendKeys(title);
         return this;
     }
 
     public HomePage enterPostDescription(String description) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(postDescriptionField)).sendKeys(description);
         return this;
     }
 
     public HomePage enterMyThoughts(String area) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(postMyThoughtsField)).sendKeys(area);
         return this;
 
@@ -169,8 +163,7 @@ public class HomePage extends BasePage {
 
 
     public HomePage clickPostButton() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(postCreateButton)).click();
+         wait.until(ExpectedConditions.elementToBeClickable(postCreateButton)).click();
         return this;
     }
 

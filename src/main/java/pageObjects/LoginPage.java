@@ -19,7 +19,6 @@ public class LoginPage extends BasePage {
     private WebElement signUpLink;
 
 
-
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -30,25 +29,27 @@ public class LoginPage extends BasePage {
     }
 
 
-     public boolean isFormElementDisplayed() {
-       return formElement.isDisplayed();
+    public boolean isFormElementDisplayed() {
+        return formElement.isDisplayed();
 
-     }
+    }
 
-     public RegistrationPage clickSignUp() {
+    public RegistrationPage clickSignUp() {
         signUpLink.click();
         return new RegistrationPage(driver);
-     }
+    }
 
-      public LoginPage enterEmail(String email) {
+    public LoginPage enterEmail(String email) {
         emailEditBox.sendKeys(email);
         return this;
     }
+
     public LoginPage enterPassword(String password) {
         passwordEditBox.sendKeys(password);
         return this;
     }
-    public HomePage clickButton(){
+
+    public HomePage clickButton() {
         loginButton.click();
         return new HomePage(driver);
     }

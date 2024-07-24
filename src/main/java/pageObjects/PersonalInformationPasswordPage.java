@@ -3,14 +3,15 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PersonalInformationPasswordPage extends BasePage {
 
 
     public PersonalInformationPasswordPage(WebDriver driver) {
         super(driver);
-    }
 
+    }
 
     @FindBy(xpath = "//*[@class='PasswordModal_password_modal__O8ESn']")
     private WebElement passwordBox;
@@ -28,6 +29,9 @@ public class PersonalInformationPasswordPage extends BasePage {
 
     @FindBy(xpath = "//button[@class='PasswordModal_pass_btn__eGL9h']")
     private WebElement saveButton;
+
+    @FindBy(xpath = "//*[@class='PasswordModal_error__9a5OG']")
+    private WebElement errorMessage;
 
 
     public boolean isPasswordBoxDisplayed() {
@@ -55,6 +59,11 @@ public class PersonalInformationPasswordPage extends BasePage {
     public PersonalInformationPasswordPage clickSaveButton() {
         saveButton.click();
         return this;
+
+    }
+
+    public boolean isErrorMessageDisplayed(String text) {
+        return errorMessage.getText().contains(text);
 
     }
 }

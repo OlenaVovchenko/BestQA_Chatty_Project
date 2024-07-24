@@ -14,7 +14,7 @@ public class AboutChattyPage extends BasePage {
 
 
     public boolean isAboutChattyBoxIsDisplayed(String text) {
-         return aboutChattyBox.getText().contains(text);
+        return aboutChattyBox.getText().contains(text);
 
 
     }
