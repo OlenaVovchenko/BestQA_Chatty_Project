@@ -4,28 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="New page">
+    <list default="true" id="803d0871-1fd2-4a83-bfb4-d8372db17766" name="Changes" comment="Updated project new">
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/TestLoginPage_testLoginWithValidData.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_07_2024_13_13_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_07_2024_13_13__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2024_21_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2024_21_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CreateAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PostPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/moneypic.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestCreateAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestHeaderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestPersonalInformationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestPostPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestRegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Traceability Matrix + test cases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/documentation/Traceability Matrix + test cases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AboutChattyPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ContactUsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DraftPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestContactUs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestLoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSavingPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestSavingAsDraftPost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="lena" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,10 +58,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="17" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2igq9g7JEoHFah76SQV8zRpcbDk" />
+  <component name="ProjectId" id="2jILltZWRIUKNS4fiGWM3an0fY5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,119 +77,139 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.LoginPage.executor": "Run",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.TestContactUs.executor": "Run",
+    "JUnit.TestContactUs.testContactUs.executor": "Run",
+    "JUnit.TestContactUs.testSuccessMessageViaContactUs.executor": "Run",
+    "JUnit.TestContactUs.testUnsuccessfulMessageWithoutEmailContactUs.executor": "Run",
+    "JUnit.TestCreateAccount.successCreateUser.executor": "Run",
+    "JUnit.TestCreateAccount.testInvalidPasswordErrorMessage.executor": "Run",
+    "JUnit.TestHeaderPage.checkHeaderElementsAreDisplayed.executor": "Run",
+    "JUnit.TestHeaderPage.executor": "Run",
+    "JUnit.TestHomePage.checkPostsQuantity.executor": "Run",
+    "JUnit.TestHomePage.executor": "Run",
+    "JUnit.TestLoginPage.testLoginWithInvalidData.executor": "Run",
     "JUnit.TestLoginPage.testLoginWithValidData.executor": "Run",
+    "JUnit.TestPersonalInformationPage.executor": "Run",
+    "JUnit.TestPostPage.executor": "Run",
+    "JUnit.TestRegistrationPage.executor": "Run",
+    "JUnit.TestSavingPost.testSavingPostAsDraft.executor": "Run",
+    "JUnit.TestSavingPost.testSuccessfulSavingPostAsDraft.executor": "Run",
+    "JUnit.TestSavingPost.testUnsuccessfulSavingPostAsDraft.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "maingeneral",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Weiterbildung/JAVA/BestQA_Chatty_Project",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.25234374",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+    "last_opened_file_path": "D:/Weiterbildung/JAVA/BestQA_Chatty_Project/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project\src\main\resources" />
+      <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project\src\main\resources\chromedriwer-win64" />
+      <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project\src\test\java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project" />
+      <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project\src\documentation" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="LoginPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LoginPage" />
+    <configuration name="TestContactUs.testUnsuccessfulMessageWithoutEmailContactUs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestContactUs" />
+      <option name="METHOD_NAME" value="testUnsuccessfulMessageWithoutEmailContactUs" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="BestQA_Chatty_Project2" />
+    <configuration name="TestLoginPage.testLoginWithInvalidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestLoginPage" />
+      <option name="METHOD_NAME" value="testLoginWithInvalidData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="BestQA_Chatty_Project2" />
-      <option name="filePath" />
+    <configuration name="TestPersonalInformationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestPersonalInformationPage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSavingAsDraftPost.testSuccessfulSavingPostAsDraft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestSavingAsDraftPost" />
+      <option name="METHOD_NAME" value="testSuccessfulSavingPostAsDraft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSavingAsDraftPost.testUnsuccessfulSavingPostAsDraft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestSavingAsDraftPost" />
+      <option name="METHOD_NAME" value="testUnsuccessfulSavingPostAsDraft" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginPage" />
+        <item itemvalue="JUnit.TestSavingAsDraftPost.testUnsuccessfulSavingPostAsDraft" />
+        <item itemvalue="JUnit.TestSavingAsDraftPost.testSuccessfulSavingPostAsDraft" />
+        <item itemvalue="JUnit.TestPersonalInformationPage" />
+        <item itemvalue="JUnit.TestLoginPage.testLoginWithInvalidData" />
+        <item itemvalue="JUnit.TestContactUs.testUnsuccessfulMessageWithoutEmailContactUs" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-107bc6b7" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="" />
-      <created>1719922418125</created>
+      <changelist id="803d0871-1fd2-4a83-bfb4-d8372db17766" name="Changes" comment="New page" />
+      <created>1721069798940</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1719922418125</updated>
+      <updated>1721069798940</updated>
     </task>
-    <task id="LOCAL-00001" summary="Chrome recorder added">
+    <task id="LOCAL-00001" summary="Updated project">
       <option name="closed" value="true" />
-      <created>1719949461765</created>
+      <created>1721073137649</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1719949461766</updated>
+      <updated>1721073137649</updated>
     </task>
-    <task id="LOCAL-00002" summary="Chrome recorder added">
+    <task id="LOCAL-00002" summary="Updated project">
       <option name="closed" value="true" />
-      <created>1720119318151</created>
+      <created>1721489723907</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1720119318152</updated>
+      <updated>1721489723909</updated>
     </task>
-    <task id="LOCAL-00003" summary="Add readme">
-      <option name="closed" value="true" />
-      <created>1720265991682</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1720265991683</updated>
-    </task>
-    <task id="LOCAL-00004" summary="POM model + Junit">
-      <option name="closed" value="true" />
-      <created>1720437122127</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1720437122127</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Chrome recorder added" />
-    <MESSAGE value="New commit" />
-    <MESSAGE value="Add readme" />
-    <MESSAGE value="POM model + Junit" />
-    <MESSAGE value="POM model + Junit new" />
     <MESSAGE value="New page" />
-    <option name="LAST_COMMIT_MESSAGE" value="New page" />
+    <MESSAGE value="Updated project" />
+    <MESSAGE value="Updated project new" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated project new" />
   </component>
 </project>
