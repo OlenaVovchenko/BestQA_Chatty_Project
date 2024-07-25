@@ -1,7 +1,14 @@
+package tests;
+
+import baseTest.BaseTest;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pageObjects.DraftPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
 
 
-public class TestSavingPost extends BaseTest {
+public class TestSavingAsDraftPost extends BaseTest {
     private final String userEmail = "olenagris@gmail.com";
     private final String userPassword = "chattytelran1";
     private final String postTitle = "Test";
@@ -9,13 +16,19 @@ public class TestSavingPost extends BaseTest {
     private final String postContent = "Hello";
     private final String postImage = "1321b5b0-44c1-4df0-8cfb-39cbbe8b06db.jpeg";
 
-    @Test
-    public void testSuccessfulSavingPostAsDraft() {
+    @BeforeEach
+    public void setUp() {
+        super.setUp();
         LoginPage loginPage = new LoginPage(driver);
-        DraftPage draftPage = loginPage.open()
+        HomePage homePage = loginPage.open()
                 .enterEmail(userEmail)
                 .enterPassword(userPassword)
-                .clickButton()
+                .clickButton();
+    }
+    @Test
+    public void testSuccessfulSavingPostAsDraft() {
+        HomePage homePage = new HomePage(driver);
+        DraftPage draftPage = homePage
                 .clickPostCreationButton()
                 .fillInTitleEditBox(postTitle)
                 .fillInDescriptionEditBox(postDescription)
@@ -29,11 +42,8 @@ public class TestSavingPost extends BaseTest {
 
     @Test
     public void testUnsuccessfulSavingPostAsDraft() {
-        LoginPage loginPage = new LoginPage(driver);
-        DraftPage draftPage = loginPage.open()
-                .enterEmail(userEmail)
-                .enterPassword(userPassword)
-                .clickButton()
+        HomePage homePage = new HomePage(driver);
+        DraftPage draftPage = homePage
                 .clickPostCreationButton()
                 .fillInTitleEditBox("")
                 .fillInDescriptionEditBox("Incomplete")

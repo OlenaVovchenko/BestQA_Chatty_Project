@@ -1,3 +1,5 @@
+package baseTest;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -17,20 +19,22 @@ public class BaseTest {
     }
 
     public void defineTestResultTrue(boolean condition) {
+        String name = this.getClass().getName();
         try {
-            assertTrue(condition, "Expected condition to be true.");
+            assertTrue(condition);
         } catch (AssertionError e) {
-            ScreenshotUtil.captureScreen(driver, this.getClass().getSimpleName());
-            throw e;
+            ScreenshotUtil.captureScreen(driver, name);
+            fail("TEST FAILED");
         }
     }
 
     public void defineTestResultFalse(boolean condition) {
+        String name = this.getClass().getName();
         try {
-            assertFalse(condition, "Expected condition to be false.");
+            assertFalse(condition);
         } catch (AssertionError e) {
-            ScreenshotUtil.captureScreen(driver, this.getClass().getSimpleName());
-            throw e;
+            ScreenshotUtil.captureScreen(driver, name);
+            fail("TEST FAILED");
         }
     }
 
@@ -40,6 +44,15 @@ public class BaseTest {
         } catch (AssertionError e) {
             ScreenshotUtil.captureScreen(driver, this.getClass().getSimpleName());
             throw e;
+        }
+    }
+    public void defineTestResultEquals(Object expected, Object actual) {
+        String name = this.getClass().getName();
+        try {
+            assertEquals(expected, actual);
+        } catch (AssertionError e) {
+            ScreenshotUtil.captureScreen(driver, name);
+            fail("TEST FAILED");
         }
     }
 

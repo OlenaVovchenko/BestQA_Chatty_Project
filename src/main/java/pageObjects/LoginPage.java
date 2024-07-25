@@ -1,3 +1,5 @@
+package pageObjects;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,14 @@ public class LoginPage extends BasePage {
     private WebElement passwordEditBox;
     @FindBy(xpath = "//button[@type=\"submit\"]")
     private WebElement loginButton;
+    @FindBy(xpath = "//*[@class='form']")
+    private WebElement formElement;
+    @FindBy(xpath = "//*[@href='/registration']")
+    private WebElement signUpLink;
+    @FindBy(xpath =  "//*[@id=\"root\"]/div/div/p/a")
+    private WebElement signInButton;
+    @FindBy(xpath = "(//*[@class=\"text-error\"])[1]")
+    private WebElement emailErrorMessage;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -32,5 +42,19 @@ public class LoginPage extends BasePage {
     public HomePage clickButton() {
         loginButton.click();
         return new HomePage(driver);
+    }
+    public boolean isFormElementDisplayed() {
+        return formElement.isDisplayed();
+    }
+    public boolean isEmailErrorMessageDisplayed() {
+        return emailErrorMessage.isDisplayed();
+    }
+    public RegistrationPage clickSignUp() {
+        signUpLink.click();
+        return new RegistrationPage(driver);
+    }
+    public CreateAccountPage clickOnSignIn(){
+        signInButton.click();
+        return new CreateAccountPage(driver);
     }
 }

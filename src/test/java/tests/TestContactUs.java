@@ -1,4 +1,13 @@
+package tests;
+
+import baseTest.BaseTest;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pageObjects.ContactUsPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class TestContactUs extends BaseTest {
@@ -7,13 +16,20 @@ public class TestContactUs extends BaseTest {
     private final String userName = "s";
     private final String content = "Wtz";
 
-    @Test
-    public void testSuccessMessageViaContactUs() {
+    @BeforeEach
+    public void setUp() {
+        super.setUp();
         LoginPage loginPage = new LoginPage(driver);
-        ContactUsPage contactUsPage = loginPage.open()
+        HomePage homePage = loginPage.open()
                 .enterEmail(userEmail)
                 .enterPassword(userPassword)
-                .clickButton()
+                .clickButton();
+    }
+
+    @Test
+    public void testSuccessMessageViaContactUs() {
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = homePage
                 .clickOnContactUsButton()
                 .fillNameInEditBoxInContact(userName)
                 .fillEmailInEditBoxInContact(userEmail)
@@ -24,11 +40,8 @@ public class TestContactUs extends BaseTest {
 
     @Test
     public void testUnsuccessfulMessageWithoutEmailContactUs() {
-        LoginPage loginPage = new LoginPage(driver);
-        ContactUsPage contactUsPage = loginPage.open()
-                .enterEmail(userEmail)
-                .enterPassword(userPassword)
-                .clickButton()
+        HomePage homePage = new HomePage(driver);
+        ContactUsPage contactUsPage = homePage
                 .clickOnContactUsButton()
                 .fillNameInEditBoxInContact(userName)
                 .fillContentInEditBoxInContact(content)

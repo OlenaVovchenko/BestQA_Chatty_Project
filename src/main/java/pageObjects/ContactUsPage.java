@@ -1,3 +1,5 @@
+package pageObjects;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +19,8 @@ public class ContactUsPage extends BasePage {
     private WebElement buttonSendMessageInContact;
     @FindBy(xpath = "//*[@class=\"success-message\"]")
     private WebElement successMessage;
+    @FindBy(xpath = "//*[@class=\"form\"]")
+    private WebElement contactForm;
 
     public ContactUsPage(WebDriver driver) {
         super(driver);
@@ -49,5 +53,8 @@ public class ContactUsPage extends BasePage {
     public boolean isSuccessMessageDisplay() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         return wait.until(ExpectedConditions.visibilityOf(successMessage)).isDisplayed();
+    }
+    public boolean isContactFormIsDisplayed() {
+        return contactForm.isDisplayed();
     }
 }
