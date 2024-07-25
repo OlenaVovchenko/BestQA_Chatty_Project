@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="ChattyProfileTest" />
+    <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="ChattyProfileTest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ChromeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChromeRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HeaderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PersonalInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PersonalInformationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PersonalInformationPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PersonalInformationPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriwer-win64/LICENSE.chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriwer-win64/LICENSE.chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriwer-win64/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PersonalInformationPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chromedriwer-win64/LICENSE.chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriwer-win64/LICENSE.chromedriver" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,10 +87,16 @@
     "Application.LoginPage.executor": "Run",
     "JUnit.PersonalInformationPageTest.executor": "Run",
     "JUnit.PersonalInformationPageTest.fillingInChangePasswordField.executor": "Run",
+    "JUnit.PersonalInformationPageTest.fillingInPersonalInformationForm.executor": "Run",
     "JUnit.TestHomePage.checkPostPreviewIsDisplayed.executor": "Run",
+    "JUnit.TestHomePage.executor": "Run",
     "JUnit.TestLoginPage.executor": "Run",
     "JUnit.TestLoginPage.testLoginWithValidData (1).executor": "Run",
     "JUnit.TestLoginPage.testLoginWithValidData.executor": "Run",
+    "JUnit.TestPersonalInformationPage.executor": "Run",
+    "JUnit.TestPersonalInformationPage.fillingInChangePasswordField.executor": "Run",
+    "JUnit.TestPersonalInformationPage.fillingInChangePasswordFieldWithPasswordsNotMatching.executor": "Run",
+    "JUnit.TestPersonalInformationPage.fillingInPersonalInformationForm.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "GeoV",
@@ -101,7 +117,7 @@
       <recent name="D:\Weiterbildung\JAVA\BestQA_Chatty_Project" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonalInformationPageTest">
+  <component name="RunManager" selected="JUnit.TestPersonalInformationPage">
     <configuration name="PersonalInformationPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,40 +127,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonalInformationPageTest.fillingInChangePasswordField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonalInformationPageTest" />
+      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonalInformationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPersonalInformationPage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPersonalInformationPage.fillingInChangePasswordField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPersonalInformationPage" />
       <option name="METHOD_NAME" value="fillingInChangePasswordField" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.checkPostPreviewIsDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPersonalInformationPage.fillingInPersonalInformationForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
-      <option name="METHOD_NAME" value="checkPostPreviewIsDisplayed" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoginPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestQA_Chatty_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestLoginPage" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoginPage.testLoginWithValidData (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestQA_Chatty_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestLoginPage" />
-      <option name="METHOD_NAME" value="testLoginWithValidData" />
+      <option name="MAIN_CLASS_NAME" value="TestPersonalInformationPage" />
+      <option name="METHOD_NAME" value="fillingInPersonalInformationForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPersonalInformationPage" />
+        <item itemvalue="JUnit.TestPersonalInformationPage.fillingInChangePasswordField" />
+        <item itemvalue="JUnit.TestPersonalInformationPage.fillingInPersonalInformationForm" />
+        <item itemvalue="JUnit.TestHomePage" />
         <item itemvalue="JUnit.PersonalInformationPageTest" />
-        <item itemvalue="JUnit.PersonalInformationPageTest.fillingInChangePasswordField" />
-        <item itemvalue="JUnit.TestHomePage.checkPostPreviewIsDisplayed" />
-        <item itemvalue="JUnit.TestLoginPage.testLoginWithValidData (1)" />
-        <item itemvalue="JUnit.TestLoginPage" />
       </list>
     </recent_temporary>
   </component>
@@ -260,5 +275,16 @@
     <MESSAGE value="Add BasePage" />
     <MESSAGE value="ChattyProfileTest" />
     <option name="LAST_COMMIT_MESSAGE" value="ChattyProfileTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PersonalInformationPage.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

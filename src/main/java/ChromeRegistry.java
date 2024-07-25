@@ -6,7 +6,7 @@ public class ChromeRegistry {
             + "resources" +  FILE_SEPARATOR + "chromedriwer-win64" +  FILE_SEPARATOR +  "chromedriver";
 
     public ChromeDriver registerDriver(){
-        System.setProperty("webdriver.chrome.driver", PATH);
+        System.setProperty("web-driver.chrome.driver", PATH);
         return  new ChromeDriver();
     }
 }
