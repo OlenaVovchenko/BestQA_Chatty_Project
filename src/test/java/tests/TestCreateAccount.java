@@ -11,18 +11,19 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class TestCreateAccount extends BaseTest {
-
+    private final String userEmail = "erjkjrt3187@gmail.com";
+    private final String userPassword = "Password234!";
 
     @Test
     public void successCreateUser() {
         LoginPage loginPage = new LoginPage(driver);
         HomePage homePage = loginPage.open()
                 .clickOnSignIn()
-                .inputEmail("erjkjrt3987@gmail.com")
-                .inputPassword("Password234!")
-                .inputConfirmPassword("Password234!")
+                .inputEmail(userEmail)
+                .inputPassword(userPassword)
+                .inputConfirmPassword(userPassword)
                 .clickRegistrationButton();
-        assertTrue(homePage.isTextHelloUserPresent("Hello, erjkjrt3987!"), "Massage is not present");
+        assertTrue(homePage.isTextHelloUserPresent("Hello, erjkjrt3187!"), "Massage is not present");
     }
 
 
