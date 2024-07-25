@@ -1,7 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -81,10 +79,10 @@ public class HomePage extends BasePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-public boolean isPostSectionDisplayed() {
-    wait.until(ExpectedConditions.visibilityOf(postSection));
-    return postSection.isDisplayed();
-}
+    public boolean isPostSectionDisplayed() {
+        wait.until(ExpectedConditions.visibilityOf(postSection));
+        return postSection.isDisplayed();
+    }
 
     public HomePage clickPostCreationButton() {
         wait.until(ExpectedConditions.elementToBeClickable(postCreationButton));
@@ -136,6 +134,7 @@ public boolean isPostSectionDisplayed() {
         contactUsButton.click();
         return new ContactUsPage(driver);
     }
+
     public HomePage clickPostsToggle() {
         wait.until(ExpectedConditions.elementToBeClickable(myPostsToggle)).click();
         return this;
@@ -216,6 +215,7 @@ public boolean isPostSectionDisplayed() {
         return this;
 
     }
+
     public HomePage clickPostButton() {
         wait.until(ExpectedConditions.elementToBeClickable(postCreateButton)).click();
         return this;
@@ -224,6 +224,7 @@ public boolean isPostSectionDisplayed() {
     public boolean isPostTitlePresent() {
         return postTitle.isDisplayed();
     }
+
     public boolean isTextHelloUserPresent(String text) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(helloUsernameInHeader));

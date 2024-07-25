@@ -7,8 +7,6 @@ import pageObjects.ContactUsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 public class TestContactUs extends BaseTest {
     private final String userEmail = "olenagris@gmail.com";

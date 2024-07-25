@@ -4,6 +4,7 @@ import baseTest.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
 import pageObjects.*;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -25,11 +26,10 @@ public class TestHeaderPage extends BaseTest {
 
     @Test
     public void checkHeaderElementsAreDisplayed() {
-        HeaderPage headerPage= new HeaderPage(driver);
+        HeaderPage headerPage = new HeaderPage(driver);
         assertTrue(headerPage.isHeaderBoxIsDisplayed());
         assertTrue(headerPage.isHeaderNavigationPanelIsDisplayed());
         assertTrue(headerPage.isHeaderUserIsDisplayed());
-
     }
 
     @Test
@@ -52,7 +52,6 @@ public class TestHeaderPage extends BaseTest {
         HeaderPage headerPage = new HeaderPage(driver);
         assertTrue(headerPage.isHeaderBoxIsDisplayed());
         assertTrue(headerPage.isHeaderNavigationPanelIsDisplayed());
-
     }
 
     @Test
@@ -68,6 +67,5 @@ public class TestHeaderPage extends BaseTest {
         headerPage.clickOnLogoutDropdown();
         LoginPage loginPage = new LoginPage(driver);
         assertTrue(loginPage.isFormElementDisplayed());
-
     }
 }

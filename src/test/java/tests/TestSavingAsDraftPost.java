@@ -25,6 +25,7 @@ public class TestSavingAsDraftPost extends BaseTest {
                 .enterPassword(userPassword)
                 .clickButton();
     }
+
     @Test
     public void testSuccessfulSavingPostAsDraft() {
         HomePage homePage = new HomePage(driver);

@@ -54,6 +54,7 @@ public class ContactUsPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         return wait.until(ExpectedConditions.visibilityOf(successMessage)).isDisplayed();
     }
+
     public boolean isContactFormIsDisplayed() {
         return contactForm.isDisplayed();
     }

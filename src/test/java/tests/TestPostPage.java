@@ -19,7 +19,6 @@ public class TestPostPage extends BaseTest {
                 .enterEmail(userEmail)
                 .enterPassword(userPassword)
                 .clickButton();
-
         assertTrue(homePage.isPostSectionDisplayed());
         homePage.clickPostsToggle();
         PostPage postPage = new PostPage(driver);
@@ -28,5 +27,4 @@ public class TestPostPage extends BaseTest {
         assertTrue(postPage.isPostDescriptionDisplayed());
         assertTrue(postPage.isPostPhotoDisplayed());
     }
-
 }

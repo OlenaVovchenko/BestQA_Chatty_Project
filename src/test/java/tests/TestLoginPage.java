@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestLoginPage extends BaseTest {

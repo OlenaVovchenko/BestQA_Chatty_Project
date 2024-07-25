@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
     private WebElement formElement;
     @FindBy(xpath = "//*[@href='/registration']")
     private WebElement signUpLink;
-    @FindBy(xpath =  "//*[@id=\"root\"]/div/div/p/a")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/p/a")
     private WebElement signInButton;
     @FindBy(xpath = "(//*[@class=\"text-error\"])[1]")
     private WebElement emailErrorMessage;
@@ -43,17 +43,16 @@ public class LoginPage extends BasePage {
         loginButton.click();
         return new HomePage(driver);
     }
+
     public boolean isFormElementDisplayed() {
         return formElement.isDisplayed();
     }
+
     public boolean isEmailErrorMessageDisplayed() {
         return emailErrorMessage.isDisplayed();
     }
-    public RegistrationPage clickSignUp() {
-        signUpLink.click();
-        return new RegistrationPage(driver);
-    }
-    public CreateAccountPage clickOnSignIn(){
+
+    public CreateAccountPage clickOnSignIn() {
         signInButton.click();
         return new CreateAccountPage(driver);
     }

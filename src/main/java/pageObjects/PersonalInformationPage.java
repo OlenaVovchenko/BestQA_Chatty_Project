@@ -1,7 +1,6 @@
 package pageObjects;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.ScriptKey;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,11 +11,6 @@ import java.time.Duration;
 
 public class PersonalInformationPage extends BasePage {
     private WebDriverWait wait;
-
-    public PersonalInformationPage(WebDriver driver) {
-        super(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-    }
 
     @FindBy(xpath = "//*[@class='post-header__plus-box']")
     private WebElement plusBox;
@@ -53,6 +47,11 @@ public class PersonalInformationPage extends BasePage {
 
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement saveButton;
+
+    public PersonalInformationPage(WebDriver driver) {
+        super(driver);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    }
 
 
     public boolean isPostHeaderIsDisplayed() {
@@ -126,7 +125,6 @@ public class PersonalInformationPage extends BasePage {
 
         return this;
     }
-
 
 
     public PersonalInformationPage enterPhone(String phone) {

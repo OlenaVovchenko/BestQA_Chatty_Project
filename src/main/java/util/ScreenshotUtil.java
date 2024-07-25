@@ -8,7 +8,6 @@ import org.openqa.selenium.io.FileHandler;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Files;
 
 public class ScreenshotUtil {
     private static final String FILE_SEPARATOR = System.getProperty("file.separator");

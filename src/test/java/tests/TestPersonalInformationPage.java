@@ -2,13 +2,8 @@ package tests;
 
 import baseTest.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.*;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -69,7 +64,6 @@ public class TestPersonalInformationPage extends BaseTest {
                 .inputNewPassword(newPassword)
                 .confirmNewPassword(confirmPassword)
                 .clickSaveButton();
-
     }
 
     @Test

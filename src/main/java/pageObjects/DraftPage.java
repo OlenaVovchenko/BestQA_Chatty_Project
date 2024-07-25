@@ -24,6 +24,7 @@ public class DraftPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(textTitleInDraft));
         return textTitleInDraft.getText().contains(text);
     }
+
     public boolean isHereCanBeYourPostsTextPresent() {
         return draftPostCaption.isDisplayed();
     }

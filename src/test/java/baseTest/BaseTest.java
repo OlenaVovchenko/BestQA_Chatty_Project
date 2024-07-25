@@ -46,6 +46,7 @@ public class BaseTest {
             throw e;
         }
     }
+
     public void defineTestResultEquals(Object expected, Object actual) {
         String name = this.getClass().getName();
         try {

@@ -24,8 +24,6 @@ public class CreateAccountPage extends BasePage {
     @FindBy(xpath = "(//*[@class=\"text-error\"])[1]")
     private WebElement passwordErrorMessage;
 
-//        @FindBy(className = "error-message")
-//        private WebElement errorMessage;
 
     public CreateAccountPage (WebDriver driver) {
         super(driver);
