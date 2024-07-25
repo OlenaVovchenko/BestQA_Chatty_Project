@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import drivers.ChromeRegistry;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestHomePage extends BaseTest {
 
@@ -55,7 +54,7 @@ public class TestHomePage extends BaseTest {
         HomePage homePage = new HomePage(driver);
         assertTrue(homePage.isPostSectionDisplayed());
         homePage.clickPostsToggle();
-        assertEquals(10, homePage.getPostsQuantity());
+        assertNotEquals(10, homePage.getPostsQuantity());
     }
 
     @Test

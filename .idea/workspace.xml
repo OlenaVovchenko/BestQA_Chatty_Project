@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc261c37-dac2-4065-9c0b-fb2825c8d384" name="Changes" comment="Add LatestVersion">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AboutChattyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AboutChattyPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DraftPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/DraftPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HeaderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PersonalInformationPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/PostPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +75,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPersonalInformationPage.fillingInChangePasswordFieldWithPasswordsNotMatching">
+  <component name="RunManager" selected="JUnit.TestHomePage.checkPostsQuantity">
+    <configuration name="TestHomePage.checkPostsQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestQA_Chatty_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHomePage" />
+      <option name="METHOD_NAME" value="checkPostsQuantity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPersonalInformationPage.fillingInChangePasswordField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestQA_Chatty_Project" />
       <option name="PACKAGE_NAME" value="" />
@@ -125,16 +126,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistrationPage.registrationNewUserWithValidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BestQA_Chatty_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestRegistrationPage" />
-      <option name="METHOD_NAME" value="registrationNewUserWithValidData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="BestQA_Chatty_Project2" />
       <method v="2">
@@ -150,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHomePage.checkPostsQuantity" />
         <item itemvalue="JUnit.TestPersonalInformationPage.fillingInChangePasswordFieldWithPasswordsNotMatching" />
         <item itemvalue="JUnit.TestPersonalInformationPage.fillingInChangePasswordField" />
         <item itemvalue="JUnit.TestPersonalInformationPage.fillingInPersonalInformationForm" />
         <item itemvalue="JUnit.TestRegistrationPage.registrationNewUserWithInvalidData" />
-        <item itemvalue="JUnit.TestRegistrationPage.registrationNewUserWithValidData" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1721812326797</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add LatestVersion">
+      <created>1721842354786</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721842354786</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add LatestVersion">
+      <created>1721842613681</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721842613681</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
